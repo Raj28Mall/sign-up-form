@@ -1,24 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="main.js" defer></script>
     <title>Sign-Up Form</title>
 </head>
+
 <body>
-        <main class="flex justify-center items-center bg-[#0e0e0e]">
-        <div class="w-[27vw] bg-green-500 min-h-screen bg-no-repeat bg-cover" style="background-image: url(./pictures/background_plants.avif);">
-            <div class="bg-[rgba(0,0,0,055)] flex justify-center items-center opacity-55 mt-[25vh] py-5">
+    <main class="flex justify-center items-center bg-[#0e0e0e]">
+        <div class="left w-[27vw] bg-green-500 min-h-screen bg-no-repeat bg-cover"
+            style="background-image: url(./pictures/background_plants.avif);">
+            <div class="bg-[rgba(0,0,0,0.45)] flex justify-center items-center py-5 absolute top-[20%] w-[27vw]">
                 <img src="./pictures/odin-logo.png" alt="Odin Logo" class="h-[113px]">
                 <span class="text-white font-norse font-bold text-8xl ">ODIN</span>
             </div>
-            <div></div>
+            <div class="text-white absolute top-[96%] left-[23%] text-sm">Photo by Halie West on Unsplash</div>
         </div>
-        <div class="w-[40vw] bg-gray-500 min-h-screen">yo</div>
+        <div class="right w-[40vw] min-h-screen">
+            <div class="bg-[#f9fafb] h-[36vh] font-medium top">
+                <div class="pt-36 px-10">
+                    <div class="text-xl">
+                        This is not a real online service! You need to know something like this in your
+                        life to help you realize your deepest dreams. <br> Sign up <span class="italic">now</span> to
+                        get started
+                    </div>
+                    <div class="my-4 font-medium text-xl">
+                        You <span class="italic">know</span> you want to.
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white h-[33vh] middle shadow-lg relative z-10">
+                <div class="font-medium text-xl p-4 mx-3">Let's do this!</div>
+                <form action="#" method="post" class="mx-10">
+                    <div class="flex space-x-10 py-3">
+                        <div class="flex flex-col">
+                            <label for="first_name" class="text-sm">FIRST NAME</label>
+                            <input type="text" id="first_name" name="first_name"
+                                class="border border-[#E5E7EB] rounded-md px-3 py-1 focus:outline-none  focus:border-blue-600 focus:shadow-xl"
+                                required>
+                        </div>
+                        <div class="flex flex-col">
+                            <label for="last_name" class="text-sm">LAST NAME</label>
+                            <input type="text" id="last_name" name="last_name"
+                                class="border border-[#E5E7EB] rounded-md px-3 py-1 focus:outline-none  focus:border-blue-600  focus:shadow-xl"
+                                required>
+                        </div>
+                    </div>
+                    <div class="flex space-x-10 py-3">
+                        <div class="flex flex-col">
+                            <label for="email" class="text-sm">EMAIL</label>
+                            <input type="email" id="email" name="email"
+                                class="border border-[#E5E7EB] rounded-md px-3 py-1 focus:outline-none  focus:border-blue-600  focus:shadow-xl"
+                                required>
+                        </div>
+                        <div class="flex flex-col">
+                            <label for="number" class="text-sm">PHONE NUMBER</label>
+                            <input type="number" min="1000000000" max="9999999999" id="phone_number" name="phone_number"
+                                class="border border-[#E5E7EB] rounded-md px-3 py-1  focus:border-blue-600 focus:outline-none w-[275px] focus:shadow-xl"
+                                required>
+                        </div>
+                    </div>
+                    <div class="flex space-x-10 py-3">
+                        <div class="flex flex-col">
+                            <label for="password" class="text-sm">PASSWORD</label>
+                            <input type="password" id="password" name="password"
+                                class="border border-[#E5E7EB] rounded-md px-3 py-1 focus:outline-none invalid:border-red-500"
+                                required>
+                        </div>
+                        <div class="flex flex-col">
+                            <label for="confirm_password" class="text-sm">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirm_password" name="confirm_password"
+                                class="border border-[#E5E7EB] rounded-md px-3 py-1 focus:outline-none invalid:border-red-500"
+                                required>
+                        </div>
+                    </div>
+
+                    <div class="mt-12">
+                        <button type="submit" class="px-12 py-3 font-medium bg-[#596D48] rounded-lg text-white">Create Account</button>
+                    </div>
+                </form>
+            </div>
+            <div class="bg-[#f9fafb] h-[30vh] bottom">
+                <div class="pt-28 px-8">
+                    Already have an account? <a href="#" class="text-[#596D48]">Log in</a>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
-</html>
 
-<!-- change the mt-[25vh] to absolute positioning and also add the footer and whatever -->
+</html>
